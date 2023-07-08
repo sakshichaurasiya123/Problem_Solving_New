@@ -1,14 +1,17 @@
 #include <iostream>
 #include<array>
 #include <limits.h>
-#include <string>
+#include <string.h>
+#include<algorithm>
 #include <vector>
 using namespace std;
 int main() {
-        string s1="naksuM ";
+        string s1="naksuM";
         string s2="Muskan";
         int l1=s1.size();
         int l2=s2.size();
+        /*First methode using frequency */
+      /*
         int freq[26]={0};
         for(int i=0; i<l1; i++){
             freq[s1[i]-'a']++;
@@ -34,6 +37,20 @@ int main() {
             if(i == 26){
                 cout<<"String is a permutation of each other"<<endl;
             }
-        }    
+        }
+        */
+        /* Second method using sort function*/
+        sort(s1.begin(),s1.end());
+        sort(s2.begin(),s2.end());
+        cout<<"s1 = "<<s1<<endl;
+        cout<<"s2 = "<<s2<<endl;
+        if((s1.compare(s2))==0){
+            cout<<"Strings are permutation of each other";
+        }
+        
+        
+        
+        
+        
 	return 0;
 }
