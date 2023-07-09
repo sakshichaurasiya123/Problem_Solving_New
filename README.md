@@ -1,2 +1,2 @@
 # Problem_Solving_New
-I will addd sub branches of seprate topics.
+I will add sub branches of seprate topics.
