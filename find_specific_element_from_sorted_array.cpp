@@ -1,3 +1,10 @@
+#include <iostream>
+#include<array>
+#include <limits.h>
+#include <string.h>
+#include<algorithm>
+#include <vector>
+using namespace std;
 /*Find the specific element which is sorted along Rows and Columns of Array using stairs method  in o(N) time*/
 void findElement(int arr[][10], int R, int C, int number){
     int i=0; //for Rows
@@ -17,6 +24,16 @@ void findElement(int arr[][10], int R, int C, int number){
     cout<<"number doeas not found in array"<<endl;
     return;
 }
+/*read matrix*/
+void readMetric(int arr[10][10], int R,int C){
+    for(int i=0; i<R; i++){
+        for(int j=0; j<C; j++){
+            cin>>arr[i][j];
+        }
+    }
+}
+
+
 int main (){
 	int arr[10][10];
 	int R,C;
