@@ -16,7 +16,7 @@ void inbuilt_sort(int arr[],int n){
     sort(arr,arr+n);
 }
 
-/*This myCompare() is used to sort elements in reverse order */
+/*Sort function internally call this myCompare(), whenever we will have to  do comparision of 2 elements*/
 bool myCompare(int a,int b){
     return a>b;
 }
